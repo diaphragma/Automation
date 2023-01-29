@@ -54,7 +54,7 @@ public class Month {
             default:
                 System.out.println("Incorrect data. Check that you have entered a NUMBER between 1-12.");
         }
-        System.out.println("You have selected a month: " + nameOfMonth + " \nwith amount of days: " + numberOfDays);
+        System.out.println("You have selected a month: " + nameOfMonth + " \nwith amount of days: " + numberOfDays + "\n");
     }
 
 }

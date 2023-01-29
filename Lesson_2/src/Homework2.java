@@ -11,25 +11,25 @@ public class Homework2 {
         System.out.println("Sum of numbers:" + sum);
     }
 
-    public static void overloadMethod(String words) {
-        String[] word = words.split(" ");
-        String firstWord = word[0];
-        String lastWord = word[1];
+    public static void overloadMethod(String w1, String w2) {
         int length = 0;
-        length = length + word[0].length() + word[1].length();
+        length = length + w1.length() + w2.length();
         System.out.println("Sum of letters:" + length);
     }
 
-    public static void overloadMethod(float num) {
+    public static boolean overloadMethod(float num) {
         if (num > 0) {
             System.out.println(true);
+            return true;
         } else if (num <= 0) {
             System.out.println(false);
+            return false;
         } else System.out.println("You didn't enter a number.");
+        return false;
     }
 
 
-    public static <string> void main(String[] args) {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
         System.out.println("What's your number?");
@@ -38,9 +38,11 @@ public class Homework2 {
 
         input.nextLine();
 
-        System.out.println("\nEnter your two words: ");
-        String words = input.nextLine();
-        overloadMethod(words);
+        System.out.println("\nEnter your first word: ");
+        String firstWord = input.nextLine();
+        System.out.println("\nEnter your second word: ");
+        String lastWord = input.nextLine();
+        overloadMethod(firstWord, lastWord);
 
         System.out.println("\nEnter your number again: ");
         float num = input.nextFloat();

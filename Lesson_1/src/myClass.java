@@ -1,12 +1,13 @@
-public class myClass {
-    public static int myMethod(int a, int b) {
-        int c = a + b; //sum of 2 numbers
+public class MyClass {
+    public static int sumOfTwoNumbers(int a, int b) {
+        int c = a + b;
         System.out.println(c);
         return c;
     }
+
     public static void main(String[] args) {
         int num1 = 1;
         int num2 = 2;
-        myMethod(num1, num2);
+        sumOfTwoNumbers(num1, num2);
     }
 }
