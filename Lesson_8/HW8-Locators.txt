@@ -1,0 +1,20 @@
+Task #1: 
+ 	WebElement forkButton = driver.findElement(By.id("fork-button"));
+        WebElement notification = driver.findElement(By.id("repo-notification-counter"));
+        WebElement starCounter = driver.findElement(By.id("js-repo-pjax-container"));
+        WebElement branch = driver.findElement(By.id("branch-select-menu"));
+        WebElement releases = driver.findElement(By.name("Releases"));
+        WebElement packages = driver.findElement(By.id("Packages"));
+        WebElement gitRepoCopy = driver.findElement(By.tagName("clipboard-copy"));
+        WebElement codeButton = driver.findElement(By.tagName("get-repo"));
+        WebElement pinButton = driver.findElement(By.xpath("//button[@title ='Pin this repository to your profile']"));
+        WebElement findBranch = driver.findElement(By.xpath("//div[@class='SelectMenu']//input"));
+
+
+
+Task #2:
+ 	WebElement sectionTerraform = driver.findElement(By.xpath("//*[text()='Terraform']"));
+ 	WebElement branch = driver.findElement(By.xpath("//summary[@title='Switch branches or tags']"));
+ 	WebElement request = driver.findElement(By.xpath("//a[text() = 'Request']"));
+ 	WebElement h1 = driver.findElement(By.xpath("//main/turbo-frame//h1"));
+ 	WebElement none2 = driver.findElement(By.xpath("//*[@class='btn mr-2 btn-block']"));
