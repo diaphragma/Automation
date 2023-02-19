@@ -73,6 +73,8 @@ public class Cars{
         cars.add(Mitsubishi);
 
         List<Cars> filteredCars = cars.stream().filter(c -> c.getColor()=="Blue" && c.getPrice() > 35000).collect(Collectors.toList());
+        System.out.println("Task #3");
         System.out.println(filteredCars);
+
     }
 }

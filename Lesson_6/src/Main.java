@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.HashMap;
 import java.util.ArrayList;
 
 public class Main {
@@ -36,8 +36,5 @@ public class Main {
         books.add("A Heart That Works");
         books.add("Ancestor Trouble");
         System.out.println(convertListIntoHashMap(books));
-
-        System.out.println("\nTask #3");
-
     }
-}
+} 
